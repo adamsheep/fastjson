@@ -240,7 +240,7 @@ public class DeserializeBeanInfo {
                 continue;
             }
 
-            beanInfo.add(new FieldInfo(field.getName(), null, field, clazz, type));
+            beanInfo.add(new FieldInfo(field.getName(), null, field));
         }
         
         for (Method method : clazz.getMethods()) {
